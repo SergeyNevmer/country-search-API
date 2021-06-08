@@ -1,0 +1,18 @@
+<div class='markup-country'>
+  <h1>{{name}}</h1>
+  <div class='info'>
+    <div class='infoOne'>
+      <p>Capital : {{capital}}</p>
+      <p>Population : {{population}}</p>
+      <p>Languages :</p>
+      <ul>
+        {{#each languages}}
+          <li>{{this.name}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class='infoTwo'>
+      <img src='{{flag}}' alt='country flag' width='200' height='150' />
+    </div>
+  </div>
+</div>
